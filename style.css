@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  height: 100vh;              /* висота вікна браузера */
+  display: flex;              /* включаємо flexbox */
+  justify-content: center;    /* центрування по горизонталі */
+  align-items: center;        /* центрування по вертикалі */
+  flex-direction: column;     /* щоб елементи йшли один під одним */
+}
+.note {
+    color: #d33434;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+.weights {
+  display: block; /* робимо блочним */
+  margin: 0 auto; /* автоматичні відступи зліва і справа */
+  width: 500px;     /* задаємо ширину тут */
+  height: auto;     /* пропорційна висота */
+}
+.trans {
+    font-size: 40px;            
+  font-weight: bold;
+   display: block;
+    text-align: center;
+}
+.alarm {
+  display: block; 
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
+.virus {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+.loader {
+  border: 8px solid #e0e0e0;    
+  border-top: 8px solid #606060; 
+  border-radius: 50%;            
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite; 
+  margin: 20px auto;             
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
